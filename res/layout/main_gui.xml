@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:background="#000000">
+  
+    <TableRow android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+     	android:padding="10dp"> 
+   
+    	<TextView  
+ 			android:id="@+id/header" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:gravity="center"
+		    android:text="@string/title"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:textColor="#ffd700"
+		    android:textStyle="bold"/>
+
+    </TableRow>
+	    
+    <TableRow>
+		<LinearLayout
+		    android:id="@+id/chart"
+		    android:layout_width="fill_parent"
+		    android:layout_height="350dp"
+		    android:layout_weight="1"
+		    android:orientation="horizontal" />
+   	</TableRow>
+
+    <TableRow 
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+     	android:padding="5dp">
+
+        <Button
+            android:id="@+id/initBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initBtn" />
+        
+        <Button
+            android:id="@+id/stepBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepBtn" />
+
+        <Button
+            android:id="@+id/runBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/runBtn" />
+
+    </TableRow>
+
+</TableLayout>
